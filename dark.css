@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+.toggle-btn{
+    display: none; /*invisível*/
+}
+
+.toggle-label{
+    width: 60px;
+    height: 30px;
+    background-color: #9f9fed;
+    border-radius: 15px;
+    margin-right: 5%;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggle-label:before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: url(arq/light.png);
+    background-size: contain;
+    top: 1px;
+    left: 1px;
+    transition: transform 0.4s ease;
+}
+
+.toggle-btn:checked + .toggle-label{
+    background-color: #8c00ff;
+}
+
+.toggle-btn:checked + .toggle-label::before{
+    transform: translateX(30px);
+}
+
+
+/* .dark-mode{
+    background: none;
+    background-color: #9F9FED;
+} */
+
+.dark-mode{
+    background: url(arq/backLight.gif);
+    background-color: #9f9fed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+/*____________HEADER__________*/
+
+.dark-mode nav a {
+    color: #6700bb;
+    font-weight: 800;
+}
+
+.dark-mode nav a:hover{
+    opacity: 0.8;
+    color: #000;
+}
+
+/*___________HOME e QUEM SOU___________*/
+
+.dark-mode h1{
+    color: #6700bb;
+}
+
+.dark-mode .container p{
+    color: #000000;
+}
+
+.dark-mode .sobreMim h2{
+    color: #000;
+}
+
+.dark-mode .sobreMim h3{
+    color: #fff;
+}
+
+.dark-mode .quemSou p{
+    color: #000000;
+}
+
+.dark-mode .body-btn i{
+    color: #000;
+}
+
+.dark-mode .body-btn a {
+    border: solid .15rem #000;
+}
+
+.dark-mode .body-btn a::before {
+    background: #6700bb;
+}
+
+/*________________PROJETOS__________________*/
+
+.dark-mode .content h2{
+    color: #000;
+}
+
+.dark-mode .content h5{
+    color: #6700bb;
+    font-weight: 900;
+}
+
+.dark-mode .card {
+    background-color: #9F9FED;
+    border: none;
+}
+
+.dark-mode .card-text {
+    color: #000;
+    font-size: 2em;
+}
+
+.dark-mode .list-group-item {
+    background-color: #9F9FED;
+    font-size: 2em;
+    font-weight: 500;
+    color: #000;
+}
+
+.darkmode .card-link{
+    color: #6700bb;
+}
+
+.dark-mode .card-link:hover{
+    color: #000;
+}
+
+.dark-mode .card .bx{
+    font-size: 1.2em;
+    color: #6700bb;
+}
+
+/*___________CONTATOS____________*/
+
+.dark-mode .contact h2{
+    color: #000;
+}
+
+.dark-mode .contact p{
+    color: #000;
+    font-size: 3.5em;
+    font-family: cocogot, sans-serif;
+    margin-bottom: 2%;
+}
+
+.dark-mode .email{
+    text-decoration: none;
+    color: #6700bb;
+}
+
+.dark-mode .email:hover{
+    opacity: 0.9;
+    color: #8c00ff;
+}
+
+/*___________FOOTER___________*/
+
+.dark-mode footer{
+    background-color: #b6b6e7;
+}
+
+.dark-mode .footer-text p{
+    color: #000;
+}
+
+.dark-mode .namelink {
+    color: #6700bb;
+}  
+
+.namelink:hover {
+    color: #613dc1;
+}
+
+.dark-mode .footer-btn a {
+    border: solid .15rem #6700bb;
+}
+
+.dark-mode .footer-btn i {
+    color: #6700bb;
+}
+
+.dark-mode .footer-btn a::before {
+    background: #000;
+}
+
+.dark-mode .footer-icon-top a::before {
+    background: #000;
+}
+
+/*RESPONSIVIDADE*/
+@media all and (max-width: 820px){
+    .dark-mode{
+        background: none;
+        background-color: #9F9FED;
+    }
+}

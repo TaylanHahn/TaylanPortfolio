@@ -239,6 +239,7 @@ img {
     font-size: 2em;
     color: #9f9fed;
     font-family: sans-serif;
+    letter-spacing: 1px;
 }
 
 .hardskills img{
@@ -246,12 +247,8 @@ img {
     margin-bottom: 5%;
 }
 
-.bxl-figma{
-    color: #444444;
-}
-
 .bxl-figma:hover{
-    opacity: 0.4;
+    opacity: 0.9;
     cursor: pointer;
 }
 
